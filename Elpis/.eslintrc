@@ -1,0 +1,76 @@
+{
+    "extends": [
+      "plugin:vue/base",
+      "plugin:vue/recommended"
+    ],
+    "plugins": ["vue"],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-unused-vars": [2, {"args": "none"}],
+      "strict": "off",
+      "valid-jsdoc": "off",
+      "jsdoc/require-param-description": "off",
+      "jsdoc/require-param-type": "off",
+      "jsdoc/check-param-names": "off",
+      "jsdoc/require-param": "off",
+      "jsdoc/check-tag-names": "off",
+      "linebreak-style": "off",
+      "array-bracket-spacing": "off",
+      "prefer-promise-reject-errors": "off",
+      "comma-dangle": "off",
+      "newline-per-chained-call": "off",
+      "no-loop-func": "off",
+      "no-empty": "off",
+      "no-else-return": "off",
+      "no-unneeded-ternary": "off",
+      "no-eval": "off",
+      "prefer-destructuring": "off",
+      "no-param-reassign": "off",
+      "max-len": "off",
+      "no-restricted-syntax": "off",
+      "no-plusplus": "off",
+      "no-useless-escape": "off",
+      "no-nested-ternary": "off",
+      "radix": "off",
+      "arrow-body-style": "off",
+      "arrow-parens": "off",
+      "vue/multi-word-component-names": "off",
+      "vue/valid-v-for": "off",
+      "vue/no-multiple-template-root": "off",
+      "vue/html-self-closing":["error",{
+        "html": {
+          "void": "never",
+          "normal": "any",
+          "component": "any"
+        },
+        "svg": "always",
+        "math": "always"
+      }],
+      // 单行内最大的属性值个数
+      "vue/max-attributes-per-line": ["error",{
+        "singleline": 5
+      }],
+      // 内容上下是否能为空行
+      "vue/multiline-html-element-content-newline": ["error", {
+        "ignoreWhenEmpty": true,
+        "allowEmptyLines": true
+      }],
+      // template 中 for 循环的 key
+      "vue/no-v-for-template-key": "off",
+      "vue/require-default-prop": "off"
+    },
+    "globals": {
+      "$": true,
+      "axios": true,
+      "Vue": true
+    }
+  }  
