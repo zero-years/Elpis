@@ -1,6 +1,6 @@
 module.exports = {
     name: 'Elpis-demo',
-    jwtSecreKey: 'd426ee41acf9943c50fa39efc6358a8f',
+    jwtSecreKey: '',
     db: {
         client: 'mysql',
         connection: {

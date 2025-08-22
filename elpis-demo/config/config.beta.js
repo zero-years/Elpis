@@ -3,11 +3,11 @@ module.exports = {
     db: {
         client: 'mysql',
         connection: {
-            host: 'sh-cdb-dk9aq886.sql.tencentcdb.com',
-            port: '29593',
-            database: 'elpis-beta',
-            user: 'root',
-            password: '!Asd935265322'
+            host: '',
+            port: '',
+            database: '',
+            user: '',
+            password: ''
         },
         pool: {
             min: 5,
